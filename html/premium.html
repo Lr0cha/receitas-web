@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site pessoal onde é apresentado receitas">
+    <meta name="keywords" content="cozinha, pipoca, chef">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/premium.css">
+    <title>Premium</title>
+</head>
+
+<body>
+    <!-- Barra de contato rápido -->
+    <a class="whats" href="#"><img width="100px" src="../img/whats.png"></a>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><h1>Receitas da Josi</h1></a>
+        </div>
+        <div class="menu">
+            <a href="receitas.html">Receitas</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="#" class="disabled_link">Premium</a>
+            <a id="botao" href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- Seção Premium -->
+    <section>
+        <div class="premium_head">
+            <h2>Torne-se um premium</h2>
+            <h4>Pelo valor de R$9,99 por mês você pode receber vídeos das receitas acompanhadas com a chef Josi</h4>
+        </div>
+
+        <!-- Formulário de Assinatura Premium -->
+        <div class="container">
+            <h2>Assinatura Premium</h2>
+            <form>
+                <div class="personal_info">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" size="50%" required><br>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" size="50%" required><!--required=obrigatorio-->
+                </div>
+                <div class="login_info">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" size="50%"  required><br>
+    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" size="50%"  required>
+                </div>
+                <div class="payment_info">
+                    <label for="forma_pagamento">Forma de Pagamento:</label>
+                    <select id="forma_pagamento" name="forma_pagamento" required>
+                        <option value="pagamento" selected disabled>Selecione uma opção</option>
+                        <option value="pix">PIX</option>
+                        <option value="debito">Débito</option>
+                        <option value="credito">Crédito</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="rodape">
+            <h3>Receitas da Josi</h3>
+            <p>Desenvolvido por @lucas</p>
+            <p>© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* Reset básico e configurações gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Seção Premium */
+.premium_head {
+    padding: 60px 0 50px;
+    text-align: center;
+}
+
+.premium_head h2 {
+    font-size: 50px;
+    color: orangered;
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/*como sera estilizado os campos*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilizando os campos de pagamento */
+.payment_info {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.payment_info label {
+    font-weight: bold;
+}

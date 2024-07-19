@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*configs básicas*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{ 
+    font-family: 'Roboto', sans-serif;
+}
+/*icone de contato fixo*/
+.whats{
+    bottom:5px;
+    right:5px;
+    position: fixed;
+}
+/*aba de navegação superior da tela*/
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 5px 0;  
+}
+/*logo no canto superior no site*/
+.logo{
+    flex:30%;
+    margin-left: 10%;
+     /* border:1px solid red;  */
+    text-align: left;
+    text-shadow:8px 8px 10px #ff2978;
+}
+
+.logo h1, .headline h2,.rodape h3,.text_above_card{
+    font-family: 'Lobster', cursive;
+    color:#180F4A;
+    font-size:35px;
+}
+/*links de movimentação entre as paginas*/
+.menu{
+    flex:50%;
+    /*border: 1px solid black;*/
+    text-align: right;
+}
+
+.menu a{
+    margin-right: 6px;
+    font-size: 20px;
+    text-decoration: none;
+    padding:20px 16px; 
+}
+
+.menu a:hover{
+    color:#ff2978;
+    border-top:4px solid #180F4A;
+}
+/*estilização botão login*/
+#botao{
+    margin-right:10%;
+    margin-left:5%;
+    padding: 10px 35px;
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+#botao:hover{
+    border:none;
+    background-color: #ff2978;
+    color:white;
+}
+/*parte "principal" abaixo da nav*/
+header{
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    background: white;
+    padding-top:100px;
+    /*border:1px solid gray;*/
+}
+
+.headline{
+    margin-left:10%;
+    flex:40%;
+    /*border: 1px solid black;*/
+}
+.headline h3{
+    text-align: center;
+    letter-spacing: 10px;
+}
+.headline h2{
+    text-align: center;
+}
+
+.headline p{
+    font-size: 14px;
+    color:gray;
+    text-align: center;
+}
+
+.head_img{
+    flex:40%;
+    margin-right:10%;
+   /*border: 1px solid blue;*/
+}
+
+.head_img img{
+    max-width: 90%;
+    text-align: center;
+    alt:"Imagem da chef Josi";
+}
+/*seção dos cards de info do site*/
+.info{
+    padding-top: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    /*border:1px solid black;*/
+    height: 400px;
+}
+
+.cards{
+    flex:27%;
+    margin:3%;
+    border:1px solid #ff2978;
+    border-radius: 6px;
+    text-align: center;
+    max-width: 27%;
+}
+
+.cards:hover{
+    background-color:#180F4A;
+}
+
+.img_card{
+    width:50px;
+}
+
+.title_card{
+    
+    font-size:25px;
+    color:black;
+}
+
+.text_card{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    /*text-indent: 50px; espaçamento paragrafo*/
+    color:gray;
+}
+
+.cards:hover{
+    background-color: #ff2978;
+}
+
+.cards:hover .title_card{
+    color:white;
+}
+
+.cards:hover .text_card{
+    white-space: wrap;
+    color:white;
+}
+/*rodape do site*/
+footer{
+    margin-top: 20px;
+    padding-top: 120px;
+    height:500px;
+    background-image:linear-gradient(180deg,#180F4A,#090422,black);
+    text-align: center;
+}
+.rodape p{
+    color:white;
+}
+.rodape h3{
+    color:#ff2978;
+}
+/*disabilitar um link de navegação que corresponde a pag. atual*/
+.disabled_link {
+    color: #999; /* Cor do texto cinza claro */
+    pointer-events: none; /* Desativa eventos de clique */
+    cursor: default; /* Cursor padrão (não clicável) */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+
+
+
+
